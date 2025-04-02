@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://github.com/exercism/go/blob/main/docs/TESTS.md
 # https://go.dev/doc/install

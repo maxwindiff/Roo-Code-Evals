@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://github.com/exercism/java/blob/main/docs/TESTS.md
 

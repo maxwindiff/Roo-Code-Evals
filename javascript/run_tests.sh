@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://github.com/exercism/javascript/blob/main/docs/TESTS.md
 

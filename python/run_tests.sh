@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://github.com/exercism/python/blob/main/docs/TESTS.md
 # https://github.com/astral-sh/uv

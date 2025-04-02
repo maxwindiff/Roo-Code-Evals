@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # https://github.com/exercism/rust/blob/main/docs/TESTS.md
 # https://www.rust-lang.org/tools/install
