@@ -16,4 +16,4 @@ Note that running `make` will compile the tests and generate compile time errors
 
 Do not alter the test file; it should be run as-is.
 
-Do not use the "ask_followup_question" tool.
+Do not use the "ask_followup_question" tool. Your job isn't done until the tests pass. Don't attempt completion until you run the tests and they pass.

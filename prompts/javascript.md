@@ -8,4 +8,4 @@ To confirm that your solution is correct, run the tests with `pnpm test`. Do not
 
 Before running the tests make sure your environment is set up by running `pnpm install --frozen-lockfile` to install the dependencies.
 
-Do not use the "ask_followup_question" tool.
+Do not use the "ask_followup_question" tool. Your job isn't done until the tests pass. Don't attempt completion until you run the tests and they pass.
