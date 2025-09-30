@@ -4,7 +4,9 @@
       "Bash(git branch:*)",
       "Bash(git fetch:*)",
       "Bash(cargo test)",
-      "Bash(cargo check:*)"
+      "Bash(cargo check:*)",
+      "Bash(git log:*)",
+      "Bash(cargo test:*)"
     ],
     "deny": [],
     "ask": []

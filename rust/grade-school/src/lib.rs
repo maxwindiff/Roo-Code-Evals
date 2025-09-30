@@ -1,8 +1,8 @@
-use std::collections::{BTreeMap, HashSet};
+use std::collections::{BTreeMap, BTreeSet, HashSet};
 
 #[derive(Default)]
 pub struct School {
-    roster: BTreeMap<u32, Vec<String>>,
+    roster: BTreeMap<u32, BTreeSet<String>>,
     students: HashSet<String>,
 }
 
@@ -13,9 +13,7 @@ impl School {
 
     pub fn add(&mut self, grade: u32, student: &str) {
         if self.students.insert(student.to_string()) {
-            let class = self.roster.entry(grade).or_default();
-            class.push(student.to_string());
-            class.sort_unstable();
+            self.roster.entry(grade).or_default().insert(student.to_string());
         }
     }
 
@@ -28,6 +26,6 @@ impl School {
     // the internal structure can be completely arbitrary. The tradeoff is that some data
     // must be copied each time `grade` is called.
     pub fn grade(&self, grade: u32) -> Vec<String> {
-        self.roster.get(&grade).cloned().unwrap_or_default()
+        self.roster.get(&grade).map_or_else(Vec::new, |s| s.iter().cloned().collect())
     }
 }
