@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(git branch:*)",
-      "Bash(git fetch:*)"
+      "Bash(git fetch:*)",
+      "Bash(cargo test)",
+      "Bash(cargo check:*)"
     ],
     "deny": [],
     "ask": []
